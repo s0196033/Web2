@@ -43,11 +43,35 @@
             GET / HTTP/1.1<br>
             Host: u82392.kubsu-dev.ru<br><br>
             </div><img src="image3.png" alt="скриншот 3"></li>
-    <li><img src="image1.png" alt="скриншот 1"><img src="image4.png" alt="скриншот 4"></li>
-    <li><img src="image1.png" alt="скриншот 1"><img src="image5.png" alt="скриншот 5"></li>
-    <li><img src="image1.png" alt="скриншот 1"><img src="image6.png" alt="скриншот 6"></li>
-    <li><img src="image1.png" alt="скриншот 1"><img src="image7.png" alt="скриншот 7"></li>
-    <li><img src="image1.png" alt="скриншот 1"><img src="image8.png" alt="скриншот 8"></li>
+    <li><img src="image1.png" alt="скриншот 1"><div class="request">
+            HEAD /file.tar.gz HTTP/1.1<br>
+            Host: u82392.kubsu-dev.ru<br>
+            Connection: close<<br><br>
+            </div><img src="image4.png" alt="скриншот 4"></li>
+    <li><img src="image1.png" alt="скриншот 1"><div class="request">
+            HEAD /image.png HTTP/1.1<br>
+            Host: u82392.kubsu-dev.ru<br>
+            Connection: close<<br><br>
+            </div><img src="image5.png" alt="скриншот 5"></li>
+    <li><img src="image1.png" alt="скриншот 1"><div class="request">
+            POST /index.php HTTP/1.1<br>
+            Host: u82392.kubsu-dev.ru<br>
+            Content-Type: application/x-www-form-urlencoded<br>
+            Content-Length: 15<br>
+            Connection: close<br><br>
+            comment=testtesttest<br><br>
+            </div><img src="image6.png" alt="скриншот 6"></li>
+    <li><img src="image1.png" alt="скриншот 1"><div class="request">
+            GET /file.tar.gz HTTP/1.1<br>
+            Host: u82392.kubsu-dev.ru<br>
+            Range: bytes=0-99<br>
+            Connection: close<br><br>
+            </div><img src="image7.png" alt="скриншот 7"></li>
+    <li><img src="image1.png" alt="скриншот 1"><div class="request">
+            HEAD /index.php HTTP/1.1<br>
+            Host: u82392.kubsu-dev.ru<br>
+            Connection: close<br>
+            </div><img src="image8.png" alt="скриншот 8"></li>
     <li><img src="image1.png" alt="скриншот 1"><img src="image.png" width="1200" alt="скриншот 6"></li>
   </ol>
 </body>
